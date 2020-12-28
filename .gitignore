@@ -9,7 +9,7 @@ venv/
 .vscode
 model2.png
 a.out
-
+build/
 *.dylib
 *.DSYM
 *.d
