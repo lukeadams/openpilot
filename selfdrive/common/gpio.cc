@@ -1,5 +1,5 @@
-#include "gpio.h"
-#include "util.h"
+#include "selfdrive/common/gpio.h"
+#include "selfdrive/common/util.h"
 #include <fcntl.h>
 #include <unistd.h>
 #include <string.h>

@@ -1,4 +1,4 @@
-#include "common/params.h"
+#include "selfdrive/common/params.h"
 
 #ifndef _GNU_SOURCE
 #define _GNU_SOURCE
@@ -17,8 +17,8 @@
 #include <csignal>
 #include <string.h>
 
-#include "common/util.h"
-#include "common/utilpp.h"
+#include "selfdrive/common/util.h"
+#include "selfdrive/common/utilpp.h"
 
 
 #if defined(QCOM) || defined(QCOM2)

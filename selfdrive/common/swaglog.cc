@@ -9,12 +9,12 @@
 #include <pthread.h>
 #include <zmq.h>
 
-#include "json11.hpp"
+#include "json11/json11.hpp"
 
-#include "common/timing.h"
-#include "common/version.h"
+#include "selfdrive/common/timing.h"
+#include "selfdrive/common/version.h"
 
-#include "swaglog.h"
+#include "selfdrive/common/swaglog.h"
 
 typedef struct LogState {
   pthread_mutex_t lock;

@@ -23,10 +23,8 @@
 #include <GLES3/gl3.h>
 #endif
 
-#endif // ifdef QCOM
-
-#include "common/util.h"
-#include "common/visionimg.h"
+#include "selfdrive/common/util.h"
+#include "selfdrive/common/gpucommon/visionimg.h"
 
 #ifdef QCOM
 using namespace android;

@@ -1,8 +1,8 @@
 #ifndef VISIONIMG_H
 #define VISIONIMG_H
 
-#include "visionbuf.h"
-#include "common/glutil.h"
+#include "selfdrive/common/gpucommon/visionbuf.h"
+#include "selfdrive/common/gpucommon/glutil.h"
 
 #ifdef QCOM
 #include <EGL/egl.h>

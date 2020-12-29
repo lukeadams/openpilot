@@ -1,4 +1,4 @@
-#include "clutil.h"
+#include "selfdrive/common/gpucommon/clutil.h"
 #include <assert.h>
 #include <inttypes.h>
 #include <string.h>
@@ -6,8 +6,8 @@
 #include <memory>
 #include <iostream>
 #include <vector>
-#include "util.h"
-#include "utilpp.h"
+#include "selfdrive/common/util.h"
+#include "selfdrive/common/utilpp.h"
 
 namespace {  // helper functions
 

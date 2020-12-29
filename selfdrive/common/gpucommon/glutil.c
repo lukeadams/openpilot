@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "glutil.h"
+#include "selfdrive/common/gpucommon/glutil.h"
 
 GLuint load_shader(GLenum shaderType, const char *src) {
   GLint status = 0, len = 0;

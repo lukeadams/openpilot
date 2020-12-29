@@ -2,7 +2,7 @@
 #include <string.h>
 #include <assert.h>
 
-#include "cqueue.h"
+#include "selfdrive/common/cqueue.h"
 
 // TODO: replace by C++ queue and CV. See camerad
 
