@@ -19,9 +19,9 @@ add_library(selfdrive-common SHARED
     swaglog.cc
     util.c
 )
-target_link_libraries(selfdrive-common json11)
+target_link_libraries(selfdrive-common json11 libzmq)
 target_include_directories(selfdrive-common PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 add_subdirectory(gpucommon)
-# add_subdirectory(test_params)
+add_subdirectory(testparams)
 add_subdirectory(visionipc)

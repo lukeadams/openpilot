@@ -1,8 +1,6 @@
 #include "selfdrive/common/params.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <cstring>
 
 static const char* const kUsage = "%s: read|write|read_block params_path key [value]\n";
 
@@ -12,12 +10,12 @@ int main(int argc, const char* argv[]) {
     return 0;
   }
 
-  const char* params_path = argv[2];
+  Params params(argv[2]);
   const char* key = argv[3];
   if (strcmp(argv[1], "read") == 0) {
     char* value;
     size_t value_size;
-    int result = read_db_value(params_path, key, &value, &value_size);
+    int result = params.read_db_value(key, &value, &value_size);
     if (result >= 0) {
       fprintf(stdout, "Read %zu bytes: ", value_size);
       fwrite(value, 1, value_size, stdout);
@@ -35,7 +33,7 @@ int main(int argc, const char* argv[]) {
 
     const char* value = argv[4];
     const size_t value_size = strlen(value);
-    int result = write_db_value(params_path, key, value, value_size);
+    int result = params.write_db_value(key, value, value_size);
     if (result >= 0) {
       fprintf(stdout, "Wrote %s to %s\n", value, key);
     } else {
@@ -45,7 +43,7 @@ int main(int argc, const char* argv[]) {
   } else if (strcmp(argv[1], "read_block") == 0) {
     char* value;
     size_t value_size;
-    read_db_value_blocking(params_path, key, &value, &value_size);
+    params.read_db_value_blocking(key, &value, &value_size);
     fprintf(stdout, "Read %zu bytes: ", value_size);
     fwrite(value, 1, value_size, stdout);
     fprintf(stdout, "\n");
