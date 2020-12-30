@@ -12,17 +12,17 @@
 #elif WEBCAM
 #include "cameras/camera_webcam.h"
 #else
-#include "cameras/camera_frame_stream.h"
+#include "selfdrive/camerad/cameras/camera_frame_stream.h"
 #endif
 
-#include <libyuv.h>
+// #include <libyuv.h>
 
-#include "clutil.h"
-#include "common/params.h"
-#include "common/swaglog.h"
-#include "common/util.h"
-#include "common/utilpp.h"
-#include "visionipc_server.h"
+#include "selfdrive/common/gpucommon/clutil.h"
+#include "selfdrive/common/params.h"
+#include "selfdrive/common/swaglog.h"
+#include "selfdrive/common/util.h"
+#include "selfdrive/common/utilpp.h"
+#include "selfdrive/common/visionipc/visionipc_server.h"
 
 ExitHandler do_exit;
 

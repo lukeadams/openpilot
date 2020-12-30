@@ -5,12 +5,12 @@
 #include <string.h>
 
 #include <libyuv.h>
-#include "messaging.hpp"
+#include "cereal/messaging/messaging.hpp"
 
-#include "common/util.h"
-#include "common/utilpp.h"
-#include "common/timing.h"
-#include "common/swaglog.h"
+#include "selfdrive/common/util.h"
+#include "selfdrive/common/utilpp.h"
+#include "selfdrive/common/timing.h"
+#include "selfdrive/common/swaglog.h"
 
 extern "C" {
 #include <libavcodec/avcodec.h>

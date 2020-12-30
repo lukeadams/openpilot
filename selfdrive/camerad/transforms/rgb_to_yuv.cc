@@ -1,9 +1,9 @@
 #include <string.h>
 #include <assert.h>
 
-#include "clutil.h"
+#include "selfdrive/common/gpucommon/clutil.h"
 
-#include "rgb_to_yuv.h"
+#include "selfdrive/camerad/transforms/rgb_to_yuv.h"
 
 void rgb_to_yuv_init(RGBToYUVState* s, cl_context ctx, cl_device_id device_id, int width, int height, int rgb_stride) {
   memset(s, 0, sizeof(*s));

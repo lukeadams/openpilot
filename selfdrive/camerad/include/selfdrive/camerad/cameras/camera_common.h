@@ -8,16 +8,16 @@
 #include <stdint.h>
 #include <memory>
 #include <thread>
-#include "common/mat.h"
-#include "common/swaglog.h"
-#include "visionbuf.h"
-#include "common/visionimg.h"
-#include "imgproc/utils.h"
-#include "messaging.hpp"
-#include "transforms/rgb_to_yuv.h"
+#include "selfdrive/common/mat.h"
+#include "selfdrive/common/swaglog.h"
+#include "selfdrive/common/gpucommon/visionbuf.h"
+#include "selfdrive/common/gpucommon/visionimg.h"
+#include "selfdrive/camerad/imgproc/utils.h"
+#include "cereal/messaging/messaging.hpp"
+#include "selfdrive/camerad/transforms/rgb_to_yuv.h"
 
-#include "visionipc.h"
-#include "visionipc_server.h"
+#include "selfdrive/common/visionipc/visionipc.h"
+#include "selfdrive/common/visionipc/visionipc_server.h"
 
 #define CAMERA_ID_IMX298 0
 #define CAMERA_ID_IMX179 1

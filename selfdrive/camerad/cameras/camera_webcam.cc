@@ -1,15 +1,15 @@
-#include "camera_webcam.h"
+#include "selfdrive/camerad/cameras/camera_webcam.h"
 
 #include <unistd.h>
 #include <assert.h>
 #include <string.h>
 #include <pthread.h>
 
-#include "common/util.h"
-#include "common/utilpp.h"
-#include "common/timing.h"
-#include "common/clutil.h"
-#include "common/swaglog.h"
+#include "selfdrive/common/util.h"
+#include "selfdrive/common/utilpp.h"
+#include "selfdrive/common/timing.h"
+#include "selfdrive/common/gpucommon/clutil.h"
+#include "selfdrive/common/swaglog.h"
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundefined-inline"

@@ -11,19 +11,19 @@
 #elif WEBCAM
 #include "cameras/camera_webcam.h"
 #else
-#include "cameras/camera_frame_stream.h"
+#include "selfdrive/camerad/cameras/camera_frame_stream.h"
 #endif
 
-#include "camera_common.h"
-#include <libyuv.h>
+#include "selfdrive/camerad/cameras/camera_common.h"
+// #include <libyuv.h>
 #include <jpeglib.h>
 
-#include "clutil.h"
-#include "common/params.h"
-#include "common/swaglog.h"
-#include "common/util.h"
-#include "common/utilpp.h"
-#include "imgproc/utils.h"
+#include "selfdrive/common/gpucommon/clutil.h"
+#include "selfdrive/common/params.h"
+#include "selfdrive/common/swaglog.h"
+#include "selfdrive/common/util.h"
+#include "selfdrive/common/utilpp.h"
+#include "selfdrive/camerad/imgproc/utils.h"
 
 const int env_xmin = getenv("XMIN") ? atoi(getenv("XMIN")) : 0;
 const int env_xmax = getenv("XMAX") ? atoi(getenv("XMAX")) : -1;
