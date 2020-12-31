@@ -34,7 +34,8 @@
   All these implementation treat infinity values correctly. They throw an
   exception if a NaN distance value occurs.
 */
-
+#ifndef fastcluster_dm
+#define fastcluster_dm
 // Older versions of Microsoft Visual Studio do not have the fenv header.
 #ifdef _MSC_VER
 #if (_MSC_VER == 1500 || _MSC_VER == 1600)
@@ -1791,4 +1792,6 @@ static void generic_linkage_vector_alternative(const t_index N,
 
 #if HAVE_VISIBILITY
 #pragma GCC visibility pop
+#endif
+
 #endif

@@ -14,14 +14,14 @@
 
 
 extern "C" {
-#include "fastcluster.h"
+#include "fastcluster/fastcluster.h"
 }
 
 // Code by Daniel Müllner
 // workaround to make it usable as a standalone version (without R)
 bool fc_isnan(double x) { return false; }
-#include "fastcluster_dm.cpp"
-#include "fastcluster_R_dm.cpp"
+#include "fastcluster/fastcluster_dm.hpp"
+#include "fastcluster/fastcluster_R_dm.hpp"
 
 extern "C" {
 //

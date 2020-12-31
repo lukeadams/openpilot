@@ -1,7 +1,7 @@
 #include <cassert>
 
 extern "C" {
-#include "fastcluster.h"
+#include "fastcluster/fastcluster.h"
 }
 
 
