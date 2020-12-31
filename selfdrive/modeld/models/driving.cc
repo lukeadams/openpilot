@@ -5,10 +5,10 @@
 #include <unistd.h>
 #include <eigen3/Eigen/Dense>
 
-#include "common/timing.h"
-#include "common/params.h"
-#include "driving.h"
-#include "clutil.h"
+#include "selfdrive/common/timing.h"
+#include "selfdrive/common/params.h"
+#include "selfdrive/modeld/models/driving.h"
+#include "selfdrive/common/gpucommon/clutil.h"
 
 constexpr int MODEL_WIDTH = 512;
 constexpr int MODEL_HEIGHT = 256;

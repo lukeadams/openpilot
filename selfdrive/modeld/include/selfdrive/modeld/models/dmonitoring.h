@@ -1,9 +1,9 @@
 #pragma once
 #include <vector>
-#include "common/util.h"
-#include "commonmodel.h"
-#include "runners/run.h"
-#include "messaging.hpp"
+#include "selfdrive/common/util.h"
+#include "selfdrive/modeld/models/commonmodel.h"
+#include "selfdrive/modeld/runners/run.h"
+#include "cereal/messaging/messaging.hpp"
 
 #define OUTPUT_SIZE 34
 

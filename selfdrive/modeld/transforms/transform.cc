@@ -1,9 +1,9 @@
 #include <string.h>
 #include <assert.h>
 
-#include "clutil.h"
+#include "selfdrive/common/gpucommon/clutil.h"
 
-#include "transform.h"
+#include "selfdrive/modeld/transforms/transform.h"
 
 void transform_init(Transform* s, cl_context ctx, cl_device_id device_id) {
   memset(s, 0, sizeof(*s));

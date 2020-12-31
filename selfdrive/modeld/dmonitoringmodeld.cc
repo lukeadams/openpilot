@@ -4,12 +4,12 @@
 #include <cassert>
 #include <sys/resource.h>
 
-#include "visionbuf.h"
-#include "visionipc_client.h"
-#include "common/swaglog.h"
-#include "common/utilpp.h"
+#include "selfdrive/common/gpucommon/visionbuf.h"
+#include "selfdrive/common/visionipc/visionipc_client.h"
+#include "selfdrive/common/swaglog.h"
+#include "selfdrive/common/utilpp.h"
 
-#include "models/dmonitoring.h"
+#include "selfdrive/modeld/models/dmonitoring.h"
 
 #ifndef PATH_MAX
 #include <linux/limits.h>

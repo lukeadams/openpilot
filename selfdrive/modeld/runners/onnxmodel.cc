@@ -1,4 +1,4 @@
-#include "onnxmodel.h"
+#include "selfdrive/modeld/runners/onnxmodel.h"
 #include <stdio.h>
 #include <string>
 #include <string.h>
@@ -7,9 +7,9 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdexcept>
-#include "common/util.h"
-#include "common/utilpp.h"
-#include "common/swaglog.h"
+#include "selfdrive/common/util.h"
+#include "selfdrive/common/utilpp.h"
+#include "selfdrive/common/swaglog.h"
 #include <cassert>
 
 

@@ -47,7 +47,7 @@ lenv.Program('_dmonitoringmodeld', [
     "models/dmonitoring.cc",
   ]+common, LIBS=libs)
 
-lenv.Program('_modeld', [
+lenv.Program('_modeld', [ # modeld-core
     "modeld.cc",
     "models/driving.cc",
   ]+common, LIBS=libs)

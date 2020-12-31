@@ -1,9 +1,8 @@
 #include <assert.h>
 #include <math.h>
-#include "commonmodel.h"
-#include "common/clutil.h"
-#include "common/mat.h"
-#include "common/timing.h"
+#include "selfdrive/modeld/models/commonmodel.h"
+#include "selfdrive/common/gpucommon/clutil.h"
+#include "selfdrive/common/timing.h"
 
 void frame_init(ModelFrame* frame, int width, int height,
                       cl_device_id device_id, cl_context context) {
