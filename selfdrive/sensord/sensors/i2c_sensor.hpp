@@ -1,8 +1,8 @@
 #pragma once
 
 #include <cstdint>
-#include "cereal/gen/cpp/log.capnp.h"
-#include "common/i2c.h"
+#include "log.capnp.h"
+#include "selfdrive/common/i2c.h"
 #include "sensors/sensor.hpp"
 #include "sensors/constants.hpp"
 

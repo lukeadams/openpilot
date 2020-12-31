@@ -3,7 +3,7 @@
 #include <fstream>
 #include <string>
 
-#include "cereal/gen/cpp/log.capnp.h"
+#include "log.capnp.h"
 #include "sensors/sensor.hpp"
 
 

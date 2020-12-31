@@ -2,8 +2,8 @@
 #include <cstdio>
 #include <unistd.h>
 
-#include "common/swaglog.h"
-#include "common/utilpp.h"
+#include "selfdrive/common/swaglog.h"
+#include "selfdrive/common/utilpp.h"
 
 #include "bmx055_magn.hpp"
 

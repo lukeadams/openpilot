@@ -16,9 +16,9 @@
 #include <utils/Timers.h>
 
 #include "messaging.hpp"
-#include "common/timing.h"
-#include "common/utilpp.h"
-#include "common/swaglog.h"
+#include "selfdrive/common/timing.h"
+#include "selfdrive/common/utilpp.h"
+#include "selfdrive/common/swaglog.h"
 
 ExitHandler do_exit;
 
