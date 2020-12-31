@@ -13,11 +13,11 @@
 #include <functional>
 #include <unordered_map>
 
-#include "messaging.hpp"
+#include "cereal/messaging/messaging.hpp"
 
-#include "common/timing.h"
-#include "common/util.h"
-#include "common/utilpp.h"
+#include "selfdrive/common/timing.h"
+#include "selfdrive/common/util.h"
+#include "selfdrive/common/utilpp.h"
 
 ExitHandler do_exit;
 
