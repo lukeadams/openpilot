@@ -11,8 +11,8 @@ extern "C" {
   #include <libavformat/avformat.h>
 }
 
-#include "common/cqueue.h"
-#include "visionipc.h"
+#include "selfdrive/common/cqueue.h"
+#include "selfdrive/common/visionipc.h"
 
 // encoder: lossey codec using hardware hevc
 

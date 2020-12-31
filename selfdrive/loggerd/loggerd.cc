@@ -24,15 +24,15 @@
 #include <cutils/properties.h>
 #endif
 
-#include "common/version.h"
-#include "common/timing.h"
-#include "common/params.h"
-#include "common/swaglog.h"
-#include "common/utilpp.h"
-#include "common/util.h"
-#include "camerad/cameras/camera_common.h"
+#include "selfdrive/common/version.h"
+#include "selfdrive/common/timing.h"
+#include "selfdrive/common/params.h"
+#include "selfdrive/common/swaglog.h"
+#include "selfdrive/common/utilpp.h"
+#include "selfdrive/common/util.h"
+#include "selfdrive/camerad/cameras/camera_common.h"
 #include "logger.h"
-#include "messaging.hpp"
+#include "cereal/messaging/messaging.hpp"
 #include "services.h"
 
 #include "visionipc.h"

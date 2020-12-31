@@ -15,8 +15,8 @@ extern "C" {
 #include <libavformat/avformat.h>
 }
 
-#include "common/swaglog.h"
-#include "common/utilpp.h"
+#include "selfdrive/common/swaglog.h"
+#include "selfdrive/common/utilpp.h"
 
 #include "raw_logger.h"
 

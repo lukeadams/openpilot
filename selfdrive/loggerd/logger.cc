@@ -12,9 +12,9 @@
 
 #include <pthread.h>
 #include <bzlib.h>
-#include "messaging.hpp"
+#include "cereal/messaging/messaging.hpp"
 
-#include "common/swaglog.h"
+#include "selfdrive/common/swaglog.h"
 
 #include "logger.h"
 

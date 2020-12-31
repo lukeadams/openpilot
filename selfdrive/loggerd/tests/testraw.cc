@@ -4,9 +4,10 @@
 
 #include <zmq.h>
 
-#include "common/visionipc.h"
-#include "common/timing.h"
-#include "common/utilpp.h"
+#include "selfdrive/common/visionipc.h"
+#include "selfdrive/common/timing.h"
+#include "selfdrive/common/utilpp.h"
+
 #include "RawLogger.h"
 
 int main() {

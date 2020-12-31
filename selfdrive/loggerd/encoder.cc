@@ -18,8 +18,8 @@
 #include <libyuv.h>
 #include <msm_media_info.h>
 
-#include "common/mutex.h"
-#include "common/swaglog.h"
+#include "selfdrive/common/mutex.h"
+#include "selfdrive/common/swaglog.h"
 
 #include "encoder.h"
 
