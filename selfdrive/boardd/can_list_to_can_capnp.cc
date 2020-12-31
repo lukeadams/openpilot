@@ -1,4 +1,4 @@
-#include "messaging.hpp"
+#include "cereal/messaging/messaging.hpp"
 
 typedef struct {
 	long address;

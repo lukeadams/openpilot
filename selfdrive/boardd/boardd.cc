@@ -18,14 +18,14 @@
 
 #include <libusb-1.0/libusb.h>
 
-#include "cereal/gen/cpp/car.capnp.h"
+#include "car.capnp.h"
 
-#include "common/util.h"
-#include "common/utilpp.h"
-#include "common/params.h"
-#include "common/swaglog.h"
-#include "common/timing.h"
-#include "messaging.hpp"
+#include "selfdrive/common/util.h"
+#include "selfdrive/common/utilpp.h"
+#include "selfdrive/common/params.h"
+#include "selfdrive/common/swaglog.h"
+#include "selfdrive/common/timing.h"
+#include "cereal/messaging/messaging.hpp"
 
 #include "panda.h"
 #include "pigeon.h"

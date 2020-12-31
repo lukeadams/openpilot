@@ -6,8 +6,8 @@
 
 #include <libusb-1.0/libusb.h>
 
-#include "cereal/gen/cpp/car.capnp.h"
-#include "cereal/gen/cpp/log.capnp.h"
+#include "car.capnp.h"
+#include "log.capnp.h"
 
 // double the FIFO size
 #define RECV_SIZE (0x1000)
