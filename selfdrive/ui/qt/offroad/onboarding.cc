@@ -5,7 +5,7 @@
 #include <QVBoxLayout>
 
 #include "onboarding.hpp"
-#include "common/params.h"
+#include "selfdrive/common/params.h"
 
 
 QLabel * title_label(QString text) {

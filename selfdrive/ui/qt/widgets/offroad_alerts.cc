@@ -7,7 +7,7 @@
 #include <QDebug>
 
 #include "offroad_alerts.hpp"
-#include "common/params.h"
+#include "selfdrive/common/params.h"
 
 
 void cleanStackedWidget(QStackedWidget* swidget) {

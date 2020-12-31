@@ -1,5 +1,5 @@
 #pragma once
-#include "messaging.hpp"
+#include "cereal/messaging/messaging.hpp"
 
 #ifdef __APPLE__
 #include <OpenGL/gl3.h>
@@ -16,13 +16,13 @@
 #include <string>
 #include <sstream>
 
-#include "nanovg.h"
+#include "nanovg/nanovg.h"
 
-#include "common/mat.h"
-#include "common/visionimg.h"
-#include "common/framebuffer.h"
-#include "common/modeldata.h"
-#include "common/params.h"
+#include "selfdrive/common/mat.h"
+#include "selfdrive/common/gpucommon/visionimg.h"
+#include "selfdrive/common/gpucommon/framebuffer.h"
+#include "selfdrive/common/modeldata.h"
+#include "selfdrive/common/params.h"
 #include "sound.hpp"
 #include "visionipc.h"
 #include "visionipc_client.h"

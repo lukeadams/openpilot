@@ -12,11 +12,11 @@
 
 #include "wifi.hpp"
 #include "settings.hpp"
-#include "widgets/toggle.hpp"
-#include "widgets/offroad_alerts.hpp"
+#include "qt/widgets/toggle.hpp"
+#include "qt/widgets/offroad_alerts.hpp"
 
-#include "common/params.h"
-#include "common/utilpp.h"
+#include "selfdrive/common/params.h"
+#include "selfdrive/common/utilpp.h"
 
 
 ParamsToggle::ParamsToggle(QString param, QString title, QString description, QString icon_path, QWidget *parent): QFrame(parent) , param(param) {

@@ -10,10 +10,10 @@
 #include <EGL/egl.h>
 #include <EGL/eglext.h>
 
-#include "nanovg.h"
+#include "nanovg/nanovg.h"
 #define NANOVG_GLES3_IMPLEMENTATION
-#include "nanovg_gl.h"
-#include "nanovg_gl_utils.h"
+#include "nanovg/nanovg_gl.h"
+#include "nanovg/nanovg_gl_utils.h"
 
 #include "framebuffer.h"
 #include "spinner.h"

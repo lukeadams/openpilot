@@ -6,7 +6,7 @@
 #include <QLineEdit>
 
 #include "wifi.hpp"
-#include "widgets/toggle.hpp"
+#include "qt/widgets/toggle.hpp"
 
 void clearLayout(QLayout* layout) {
   while (QLayoutItem* item = layout->takeAt(0)) {

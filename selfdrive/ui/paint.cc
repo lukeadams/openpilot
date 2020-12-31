@@ -4,16 +4,16 @@
 #include <map>
 #include <cmath>
 #include <iostream>
-#include "common/util.h"
-#include "common/timing.h"
+#include "selfdrive/common/timing.h"
+#include "selfdrive/common/util.h"
 #include <algorithm>
 
 #define NANOVG_GLES3_IMPLEMENTATION
-#include "nanovg_gl.h"
-#include "nanovg_gl_utils.h"
+#include "nanovg/nanovg_gl.h"
+#include "nanovg/nanovg_gl_utils.h"
 
 extern "C"{
-#include "common/glutil.h"
+#include "selfdrive/common/gpucommon/glutil.h"
 }
 
 #include "paint.hpp"

@@ -12,7 +12,7 @@
 
 #include "qt_sound.hpp"
 #include "widgets/offroad_alerts.hpp"
-#include "ui/ui.hpp"
+#include "ui.hpp"
 
 
 // container window for onroad NVG UI

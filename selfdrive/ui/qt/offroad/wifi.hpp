@@ -7,7 +7,7 @@
 #include <QTimer>
 
 #include "wifiManager.hpp"
-#include "widgets/input_field.hpp"
+#include "qt/widgets/input_field.hpp"
 
 
 class WifiUI : public QWidget {

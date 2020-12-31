@@ -1,6 +1,6 @@
 #pragma once
 #include <map>
-#include "cereal/gen/cpp/log.capnp.h"
+#include "log.capnp.h"
 
 typedef cereal::CarControl::HUDControl::AudibleAlert AudibleAlert;
 

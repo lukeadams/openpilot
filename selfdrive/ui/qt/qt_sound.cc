@@ -1,5 +1,5 @@
 #include <QUrl>
-#include "qt_sound.hpp"
+#include "qt/qt_sound.hpp"
 
 QtSound::QtSound() {
   for (auto &kv : sound_map) {

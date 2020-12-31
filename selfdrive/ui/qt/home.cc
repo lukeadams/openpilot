@@ -11,7 +11,7 @@
 #include <QLayout>
 #include <QDateTime>
 
-#include "common/params.h"
+#include "selfdrive/common/params.h"
 
 #include "home.hpp"
 #include "paint.hpp"

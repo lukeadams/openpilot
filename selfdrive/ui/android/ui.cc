@@ -5,11 +5,11 @@
 
 #include <algorithm>
 
-#include "common/util.h"
-#include "common/utilpp.h"
-#include "common/params.h"
-#include "common/touch.h"
-#include "common/swaglog.h"
+#include "selfdrive/common/util.h"
+#include "selfdrive/common/utilpp.h"
+#include "selfdrive/common/params.h"
+#include "selfdrive/common/touch.h"
+#include "selfdrive/common/swaglog.h"
 
 #include "ui.hpp"
 #include "paint.hpp"

@@ -16,8 +16,8 @@
 #include <openssl/pem.h>
 
 #include "drive_stats.hpp"
-#include "common/params.h"
-#include "common/utilpp.h"
+#include "selfdrive/common/params.h"
+#include "selfdrive/common/utilpp.h"
 
 
 constexpr double MILE_TO_KM = 1.60934;

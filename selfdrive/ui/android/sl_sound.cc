@@ -1,8 +1,8 @@
 #include <math.h>
 #include <stdlib.h>
 #include <atomic>
-#include "common/swaglog.h"
-#include "common/timing.h"
+#include "selfdrive/common/swaglog.h"
+#include "selfdrive/common/timing.h"
 
 #include "android/sl_sound.hpp"
 

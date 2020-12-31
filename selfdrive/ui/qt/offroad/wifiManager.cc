@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <iostream>
 #include "wifiManager.hpp"
-#include "common/params.h"
+#include "selfdrive/common/params.h"
 
 /**
  * We are using a NetworkManager DBUS API : https://developer.gnome.org/NetworkManager/1.26/spec.html

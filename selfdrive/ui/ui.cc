@@ -9,10 +9,10 @@
 #include <poll.h>
 #include <sys/mman.h>
 
-#include "common/util.h"
-#include "common/swaglog.h"
-#include "common/visionimg.h"
-#include "common/utilpp.h"
+#include "selfdrive/common/util.h"
+#include "selfdrive/common/swaglog.h"
+#include "selfdrive/common/gpucommon/visionimg.h"
+#include "selfdrive/common/utilpp.h"
 #include "ui.hpp"
 #include "paint.hpp"
 
