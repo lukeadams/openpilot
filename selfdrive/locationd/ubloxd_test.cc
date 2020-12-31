@@ -4,10 +4,10 @@
 #include "messaging.hpp"
 #include "impl_zmq.hpp"
 
-#include "common/params.h"
-#include "common/swaglog.h"
-#include "common/timing.h"
-#include "common/util.h"
+#include "selfdrive/common/params.h"
+#include "selfdrive/common/swaglog.h"
+#include "selfdrive/common/timing.h"
+#include "selfdrive/common/util.h"
 #include "ublox_msg.h"
 
 using namespace ublox;

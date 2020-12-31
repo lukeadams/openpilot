@@ -1,7 +1,7 @@
 #pragma once
 
 #include <stdint.h>
-#include "messaging.hpp"
+#include "cereal/messaging/messaging.hpp"
 
 #define min(x, y) ((x) <= (y) ? (x) : (y))
 

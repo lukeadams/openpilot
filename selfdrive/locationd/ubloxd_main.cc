@@ -11,12 +11,12 @@
 #include <ctime>
 #include <chrono>
 
-#include "messaging.hpp"
-#include "common/util.h"
-#include "common/utilpp.h"
-#include "common/params.h"
-#include "common/swaglog.h"
-#include "common/timing.h"
+#include "cereal/messaging/messaging.hpp"
+#include "selfdrive/common/util.h"
+#include "selfdrive/common/utilpp.h"
+#include "selfdrive/common/params.h"
+#include "selfdrive/common/swaglog.h"
+#include "selfdrive/common/timing.h"
 
 #include "ublox_msg.h"
 

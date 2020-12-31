@@ -5,7 +5,7 @@
 #include <ctime>
 #include <chrono>
 
-#include "common/swaglog.h"
+#include "selfdrive/common/swaglog.h"
 
 #include "ublox_msg.h"
 
