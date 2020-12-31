@@ -1,3 +1,4 @@
+
 add_library(selfdrive-gpucommon SHARED
     buffering.c
     clutil.cc
@@ -13,4 +14,4 @@ add_library(selfdrive-gpucommon SHARED
     "include/selfdrive/common/gpucommon/visionimg.h"
 )
 target_include_directories(selfdrive-gpucommon PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
-target_link_libraries(selfdrive-gpucommon selfdrive-common)
+target_link_libraries(selfdrive-gpucommon selfdrive-common GL OpenCL) 
