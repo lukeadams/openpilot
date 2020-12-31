@@ -1,13 +1,13 @@
 from libcpp.string cimport string
 from libcpp cimport bool
 
-cdef extern from "selfdrive/common/params.cc":
+cdef extern from "params.cc":
   pass
 
-cdef extern from "selfdrive/common/util.c":
+cdef extern from "util.c":
   pass
 
-cdef extern from "selfdrive/common/params.h":
+cdef extern from "params.h":
   cdef cppclass Params:
     Params(bool)
     Params(string)
