@@ -12,10 +12,9 @@
 #include "msmb_camera.h"
 #include "msm_cam_sensor.h"
 
-#include "visionbuf.h"
-
-#include "common/mat.h"
-#include "common/utilpp.h"
+#include "selfdrive/common/mat.h"
+#include "selfdrive/common/visionbuf.h"
+#include "selfdrive/common/utilpp.h"
 
 #include "camera_common.h"
 
