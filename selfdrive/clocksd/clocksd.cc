@@ -14,10 +14,10 @@
 #include <cassert>
 #include <chrono>
 
-#include "messaging.hpp"
-#include "common/timing.h"
-#include "common/util.h"
-#include "common/utilpp.h"
+#include "cereal/messaging/messaging.hpp"
+#include "selfdrive/common/timing.h"
+#include "selfdrive/common/util.h"
+#include "selfdrive/common/utilpp.h"
 
 ExitHandler do_exit;
 
