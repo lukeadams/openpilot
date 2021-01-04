@@ -1,7 +1,9 @@
-{ pkgs ? import <nixpkgs> {} }:
+{ pkgs ? import /home/lukeadams/nixpkgs {} }:
+
   (pkgs.mkShell.override { stdenv = pkgs.clangStdenv; }) {
     shellHook = ''
         export PS1="$PS1 (openpilot-env) "
+        export PYTHONPATH="$PYTHONPATH:/home/lukeadams/openpilot:/home/lukeadams/openpilot/build"
     '';
     # nativeBuildInputs is usually what you want -- tools you need to run
     nativeBuildInputs = (with pkgs; [
@@ -13,7 +15,7 @@
         git-lfs
         autoconf 
         # build-essential 
-        bzip2 
+        # bzip2 
         capnproto 
         cppcheck 
         # clang 
@@ -29,10 +31,13 @@
         eigen
         libffi
         glew
+        ninja # not used ... yet
         # libgles2-mesa-dev 
+        # cudnn_cudatoolkit_10_2
+        libglvnd
         glfw3
         glib
-        lzma 
+        # lzma 
         libmysqlclient
         llvmPackages.openmp
         opencv4
@@ -44,6 +49,7 @@
         libtool 
         libusb
         zeromq
+        gcc-unwrapped
         # libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsmpeg-dev 
         # libsdl1.2-dev  libportmidi-dev libswscale-dev libavformat-dev libavcodec-dev libfreetype6-dev 
         # libsystemd-dev 
@@ -65,9 +71,10 @@
         intel-ocl # intel opencl library
         ocl-icd # opencl so fileexp
         opencl-headers
-
+        openssl
         autoPatchelfHook
         llvmPackages.libcxxStdenv.cc.cc.lib
+        lldb
         # ncurses
         # llvmPackages.libstdcxxClang
         # llvmPackages.libcxx llvmPackages.libcxxabi
@@ -78,6 +85,20 @@
         pyyaml
         sympy
         cffi
+        pycapnp
+        Logentries
+        pyzmq
+        pyjwt
+        requests
+        atomicwrites
+        setproctitle
+        psutil
+        smbus2
+        # onnx
+        # tensorflow_2
+        libusb1
+        tqdm
+        crcmod
     ]);
 
     libs = pkgs.clangStdenv.lib.makeLibraryPath [ pkgs.gcc-unwrapped ];
