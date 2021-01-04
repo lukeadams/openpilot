@@ -1,9 +1,9 @@
 import os
-
+from common.basedir import BASEDIR
 from cffi import FFI
 from common.ffi_wrapper import suffix
 
-mpc_dir = os.path.dirname(os.path.abspath(__file__))
+mpc_dir = os.path.join(BASEDIR, "build/selfdrive/controls/lib/lateral_mpc")
 libmpc_fn = os.path.join(mpc_dir, "libmpc"+suffix())
 
 ffi = FFI()
