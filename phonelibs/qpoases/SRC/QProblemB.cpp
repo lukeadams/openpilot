@@ -32,7 +32,7 @@
  */
 
 
-#include <QProblemB.hpp>
+#include "QProblemB.hpp"
 
 #include <stdio.h>
 

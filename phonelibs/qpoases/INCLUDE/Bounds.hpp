@@ -36,7 +36,7 @@
 #define QPOASES_BOUNDS_HPP
 
 
-#include <SubjectTo.hpp>
+#include "SubjectTo.hpp"
 
 
 
@@ -179,7 +179,7 @@ class Bounds : public SubjectTo
 		Indexlist fixed;		/**< Index list of fixed variables. */
 };
 
-#include <Bounds.ipp>
+#include "Bounds.ipp"
 
 #endif	/* QPOASES_BOUNDS_HPP */
 

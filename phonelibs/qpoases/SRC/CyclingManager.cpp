@@ -33,7 +33,7 @@
  */
 
 
-#include <CyclingManager.hpp>
+#include "CyclingManager.hpp"
 
 
 /*****************************************************************************

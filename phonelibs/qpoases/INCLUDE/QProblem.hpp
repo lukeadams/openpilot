@@ -37,9 +37,9 @@
 #define QPOASES_QPROBLEM_HPP
 
 
-#include <QProblemB.hpp>
-#include <Constraints.hpp>
-#include <CyclingManager.hpp>
+#include "QProblemB.hpp"
+#include "Constraints.hpp"
+#include "CyclingManager.hpp"
 
 
 /** A class for setting up and solving quadratic programs. The main feature is
@@ -656,7 +656,7 @@ class QProblem : public QProblemB
 };
 
 
-#include <QProblem.ipp>
+#include "QProblem.ipp"
 
 #endif	/* QPOASES_QPROBLEM_HPP */
 

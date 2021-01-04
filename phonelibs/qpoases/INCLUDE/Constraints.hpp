@@ -36,7 +36,7 @@
 #define QPOASES_CONSTRAINTS_HPP
 
 
-#include <SubjectTo.hpp>
+#include "SubjectTo.hpp"
 
 
 
@@ -171,7 +171,7 @@ class Constraints : public SubjectTo
 };
 
 
-#include <Constraints.ipp>
+#include "Constraints.ipp"
 
 #endif	/* QPOASES_CONSTRAINTS_HPP */
 

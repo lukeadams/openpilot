@@ -38,7 +38,7 @@
 #define QPOASES_QPROBLEMB_HPP
 
 
-#include <Bounds.hpp>
+#include "Bounds.hpp"
 
 
 
@@ -618,7 +618,7 @@ class QProblemB
 };
 
 
-#include <QProblemB.ipp>
+#include "QProblemB.ipp"
 
 #endif	/* QPOASES_QPROBLEMB_HPP */
 

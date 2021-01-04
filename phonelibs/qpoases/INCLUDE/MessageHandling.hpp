@@ -55,8 +55,8 @@
 #endif
 
 
-#include <Types.hpp>
-#include <Constants.hpp>
+#include "Types.hpp"
+#include "Constants.hpp"
 
 
 /** Defines symbols for global return values. \n
@@ -405,7 +405,7 @@ class MessageHandling
 MessageHandling* getGlobalMessageHandler( );
 
 
-#include <MessageHandling.ipp>
+#include "MessageHandling.ipp"
 
 #endif /* QPOASES_MESSAGEHANDLING_HPP */
 

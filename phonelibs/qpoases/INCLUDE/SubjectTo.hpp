@@ -36,7 +36,7 @@
 #define QPOASES_SUBJECTTO_HPP
 
 
-#include <Indexlist.hpp>
+#include "Indexlist.hpp"
 
 
 
@@ -168,7 +168,7 @@ class SubjectTo
 
 
 
-#include <SubjectTo.ipp>
+#include "SubjectTo.ipp"
 
 #endif	/* QPOASES_SUBJECTTO_HPP */
 

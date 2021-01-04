@@ -36,7 +36,7 @@
 #define QPOASES_INDEXLIST_HPP
 
 
-#include <Utils.hpp>
+#include "Utils.hpp"
 
 
 /** This class manages index lists.
@@ -144,7 +144,7 @@ class Indexlist
 };
 
 
-#include <Indexlist.ipp>
+#include "Indexlist.ipp"
 
 #endif	/* QPOASES_INDEXLIST_HPP */
 

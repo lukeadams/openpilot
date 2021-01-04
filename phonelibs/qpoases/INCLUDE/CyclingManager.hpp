@@ -36,7 +36,7 @@
 #define QPOASES_CYCLINGMANAGER_HPP
 
 
-#include <Utils.hpp>
+#include "Utils.hpp"
 
 
 
@@ -116,7 +116,7 @@ class CyclingManager
 };
 
 
-#include <CyclingManager.ipp>
+#include "CyclingManager.ipp"
 
 #endif	/* QPOASES_CYCLINGMANAGER_HPP */
 

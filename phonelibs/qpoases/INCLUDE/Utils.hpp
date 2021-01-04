@@ -35,7 +35,7 @@
 #define QPOASES_UTILS_HPP
 
 
-#include <MessageHandling.hpp>
+#include "MessageHandling.hpp"
 
 
 #ifdef PC_DEBUG  /* Define print functions only for debugging! */
@@ -187,7 +187,7 @@ inline real_t getAbs(	real_t x		/**< Input argument. */
 
 
 
-#include <Utils.ipp>
+#include "Utils.ipp"
 
 #endif	/* QPOASES_UTILS_HPP */
 

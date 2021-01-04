@@ -36,7 +36,7 @@
 #ifndef QPOASES_SOLUTIONANALYSIS_HPP
 #define QPOASES_SOLUTIONANALYSIS_HPP
 
-#include <QProblem.hpp>
+#include "QProblem.hpp"
 
 /** Enables the computation of variance as is in the standard version of qpOASES */
 #define QPOASES_USE_OLD_VERSION 0

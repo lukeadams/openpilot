@@ -30,7 +30,7 @@
  *	Solution analysis class, based on a class in the standard version of the qpOASES
  */
 
-#include <EXTRAS/SolutionAnalysis.hpp>
+#include "EXTRAS/SolutionAnalysis.hpp"
 
 /*
  *	S o l u t i o n A n a l y s i s
