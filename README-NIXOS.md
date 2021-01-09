@@ -41,3 +41,6 @@ Steps:
 
 ### Disable cpu mitigations
 `boot.kernelParams = ["migitations=off"];`
+
+### Debugging cameras
+`guvcview` is useful for quick camera checks
