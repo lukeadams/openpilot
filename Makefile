@@ -4,8 +4,11 @@ default:
 rebuild-full:
 	nix-shell --pure --run "rm -rf /home/lukeadams/openpilot/build; mkdir build; cd build; cmake ..; make -j48"
 
-rebuild:
+slowrebuild:
 	nix-shell --pure --run "cd build; make -j1"
+
+rebuild:
+	nix-shell --pure --run "cd build; make -j48"
 
 manager-exec:
 	nix-shell --run "PASSIVE=0 NOSENSOR=1 WEBCAM=1 ./selfdrive/manager.py"
