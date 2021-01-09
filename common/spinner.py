@@ -6,7 +6,7 @@ from common.basedir import BASEDIR
 class Spinner():
   def __init__(self):
     try:
-      self.spinner_proc = subprocess.Popen(["./spinner"],
+      self.spinner_proc = subprocess.Popen([os.path.join(BASEDIR, "build/selfdrive/ui/selfdrive-ui-spinner")],
                                            stdin=subprocess.PIPE,
                                            cwd=os.path.join(BASEDIR, "selfdrive", "ui"),
                                            close_fds=True)
