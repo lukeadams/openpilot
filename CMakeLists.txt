@@ -16,7 +16,7 @@ option(OPENPILOT_BUILD_TESTS "Build tests?"
 FALSE)
 
 ### Scan for libs
-find_package(CapnProto)
+find_package(CapnProto REQUIRED)
 find_package(Python COMPONENTS Interpreter Development NumPy REQUIRED) 
 find_package(Cython REQUIRED)
 find_package(ZeroMQ REQUIRED)
@@ -26,7 +26,7 @@ find_package(Qt5 COMPONENTS Core Widgets Gui Multimedia Network DBus REQUIRED)
 find_package(OpenSSL REQUIRED)
 find_package(libusb-1.0 REQUIRED)
 find_package(BZip2 REQUIRED)
-find_package (Eigen3 REQUIRED NO_MODULE)
+find_package(Eigen3 REQUIRED NO_MODULE)
 
 ### Include subtrees
 add_subdirectory(cereal)
