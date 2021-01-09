@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake/")
 
 option(OPENPILOT_OPT_USE_WEBCAM "Use local webcams for Openpilot inputs?"
-         FALSE)
+         TRUE)
 
 option(OPENPILOT_BUILD_TESTS "Build tests?"
 FALSE)
