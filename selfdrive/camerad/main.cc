@@ -6,11 +6,11 @@
 #include <sys/socket.h>
 
 #if defined(QCOM) && !defined(QCOM_REPLAY)
-#include "cameras/camera_qcom.h"
+#include "selfdrive/camerad/cameras/camera_qcom.h"
 #elif QCOM2
-#include "cameras/camera_qcom2.h"
-#elif WEBCAM
-#include "cameras/camera_webcam.h"
+#include "selfdrive/camerad/cameras/camera_qcom2.h"
+#elif OPENPILOT_OPT_USE_WEBCAM
+#include "selfdrive/camerad/cameras/camera_webcam.h"
 #else
 #include "selfdrive/camerad/cameras/camera_frame_stream.h"
 #endif

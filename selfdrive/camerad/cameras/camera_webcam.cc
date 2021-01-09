@@ -26,7 +26,8 @@ extern ExitHandler do_exit;
 #define FRAME_HEIGHT 874
 #define FRAME_WIDTH_FRONT  1152
 #define FRAME_HEIGHT_FRONT 864
-
+#define CAM_FRONT_ID 0
+#define CAM_REAR_ID 2
 namespace {
 void camera_open(CameraState *s, bool rear) {
 }
@@ -51,7 +52,7 @@ static void* rear_thread(void *arg) {
   set_thread_name("webcam_rear_thread");
   CameraState *s = (CameraState*)arg;
 
-  cv::VideoCapture cap_rear(1); // road
+  cv::VideoCapture cap_rear(CAM_REAR_ID); // road
   cap_rear.set(cv::CAP_PROP_FRAME_WIDTH, 853);
   cap_rear.set(cv::CAP_PROP_FRAME_HEIGHT, 480);
   cap_rear.set(cv::CAP_PROP_FPS, s->fps);
@@ -74,6 +75,7 @@ static void* rear_thread(void *arg) {
   const cv::Mat transform = cv::Mat(3, 3, CV_32F, ts);
 
   if (!cap_rear.isOpened()) {
+    printf("Rear capture device failed to init!\n");
     err = 1;
   }
 
@@ -129,7 +131,7 @@ static void* rear_thread(void *arg) {
 void front_thread(CameraState *s) {
   int err;
 
-  cv::VideoCapture cap_front(2); // driver
+  cv::VideoCapture cap_front(CAM_FRONT_ID); // driver
   cap_front.set(cv::CAP_PROP_FRAME_WIDTH, 853);
   cap_front.set(cv::CAP_PROP_FRAME_HEIGHT, 480);
   cap_front.set(cv::CAP_PROP_FPS, s->fps);
@@ -150,6 +152,7 @@ void front_thread(CameraState *s) {
   const cv::Mat transform = cv::Mat(3, 3, CV_32F, ts);
 
   if (!cap_front.isOpened()) {
+    printf("Front capture device failed to init!\n");
     err = 1;
   }
 
@@ -233,10 +236,10 @@ void cameras_init(VisionIpcServer *v, MultiCameraState *s, cl_device_id device_i
 void camera_autoexposure(CameraState *s, float grey_frac) {}
 
 void cameras_open(MultiCameraState *s) {
-  // LOG("*** open front ***");
+  printf("*** open front ***\n");
   camera_open(&s->front, false);
 
-  // LOG("*** open rear ***");
+  printf("*** open rear ***");
   camera_open(&s->rear, true);
 }
 

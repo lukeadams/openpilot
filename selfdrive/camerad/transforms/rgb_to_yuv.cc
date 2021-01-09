@@ -20,7 +20,8 @@ void rgb_to_yuv_init(RGBToYUVState* s, cl_context ctx, cl_device_id device_id, i
 #endif
            "-DWIDTH=%d -DHEIGHT=%d -DUV_WIDTH=%d -DUV_HEIGHT=%d -DRGB_STRIDE=%d -DRGB_SIZE=%d",
            width, height, width/ 2, height / 2, rgb_stride, width * height);
-  cl_program prg = cl_program_from_file(ctx, device_id, "transforms/rgb_to_yuv.cl", args);
+  // CHECKPATH
+  cl_program prg = cl_program_from_file(ctx, device_id, CAMERAD_TRANSFORMS_OCL_DIR"/rgb_to_yuv.cl", args);
 
   s->rgb_to_yuv_krnl = CL_CHECK_ERR(clCreateKernel(prg, "rgb_to_yuv", &err));
   // done with this

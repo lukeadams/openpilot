@@ -8,8 +8,8 @@
 #include "cameras/camera_qcom.h"
 #elif QCOM2
 #include "cameras/camera_qcom2.h"
-#elif WEBCAM
-#include "cameras/camera_webcam.h"
+#elif OPENPILOT_OPT_USE_WEBCAM
+#include "selfdrive/camerad/cameras/camera_webcam.h"
 #else
 #include "selfdrive/camerad/cameras/camera_frame_stream.h"
 #endif
@@ -42,9 +42,9 @@ static cl_program build_debayer_program(cl_device_id device_id, cl_context conte
            b->rgb_width, b->rgb_height, b->rgb_stride,
            ci->bayer_flip, ci->hdr);
 #ifdef QCOM2
-  return cl_program_from_file(context, device_id, "cameras/real_debayer.cl", args);
+  return cl_program_from_file(context, device_id, CAMERAD_OCL_DIR"/real_debayer.cl", args);
 #else
-  return cl_program_from_file(context, device_id, "cameras/debayer.cl", args);
+  return cl_program_from_file(context, device_id, CAMERAD_OCL_DIR"/cameras/debayer.cl", args);
 #endif
 }
 
