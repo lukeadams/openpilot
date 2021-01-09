@@ -63,10 +63,10 @@ if (origin is not None) and (branch is not None):
     # Actually check dirty files
     if not prebuilt:
       # This is needed otherwise touched files might show up as modified
-      try:
-        subprocess.check_call(["git", "update-index", "--refresh"])
-      except subprocess.CalledProcessError:
-        pass
+      # try:
+      #   subprocess.check_call(["git", "update-index", "--refresh"])
+      # except subprocess.CalledProcessError:
+      #   pass
       dirty = (subprocess.call(["git", "diff-index", "--quiet", branch, "--"]) != 0)
 
       # Log dirty files
