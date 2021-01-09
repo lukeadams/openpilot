@@ -39,7 +39,7 @@ def get_git_remote(default: Optional[str] = None) -> Optional[str]:
     return run_cmd_default(["git", "config", "--get", "remote.origin.url"], default=default)
 
 
-with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "common", "version.h")) as _versionf:
+with open(os.path.join(BASEDIR, "selfdrive/common/include/selfdrive/common/version.h")) as _versionf:
   version = _versionf.read().split('"')[1]
 
 prebuilt = os.path.exists(os.path.join(BASEDIR, 'prebuilt'))
