@@ -139,8 +139,8 @@ def build():
     else:
       break
 
-if __name__ == "__main__" and not PREBUILT:
-  build()
+# if __name__ == "__main__" and not PREBUILT:
+  # build()
 
 import cereal.messaging as messaging
 
@@ -152,33 +152,33 @@ from selfdrive.launcher import launcher
 
 # comment out anything you don't want to run
 managed_processes = {
-  "thermald": "selfdrive.thermald.thermald",
-  "uploader": "selfdrive.loggerd.uploader",
-  "deleter": "selfdrive.loggerd.deleter",
-  "controlsd": "selfdrive.controls.controlsd",
-  "plannerd": "selfdrive.controls.plannerd",
-  "radard": "selfdrive.controls.radard",
-  "dmonitoringd": "selfdrive.monitoring.dmonitoringd",
-  "ubloxd": ("selfdrive/locationd", ["./ubloxd"]),
-  "loggerd": ("selfdrive/loggerd", ["./loggerd"]),
-  "logmessaged": "selfdrive.logmessaged",
-  "locationd": "selfdrive.locationd.locationd",
-  "tombstoned": "selfdrive.tombstoned",
-  "logcatd": ("selfdrive/logcatd", ["./logcatd"]),
-  "proclogd": ("selfdrive/proclogd", ["./proclogd"]),
   "boardd": ("selfdrive/boardd", ["./boardd"]),   # not used directly
-  "pandad": "selfdrive.pandad",
-  "ui": ("selfdrive/ui", ["./ui"]),
   "calibrationd": "selfdrive.locationd.calibrationd",
-  "paramsd": "selfdrive.locationd.paramsd",
-  "camerad": ("selfdrive/camerad", ["./camerad"]),
-  "sensord": ("selfdrive/sensord", ["./sensord"]),
-  "clocksd": ("selfdrive/clocksd", ["./clocksd"]),
-  "gpsd": ("selfdrive/sensord", ["./gpsd"]),
-  "updated": "selfdrive.updated",
+  "camerad": ("selfdrive/camerad", [os.path.join(BASEDIR, "build/selfdrive/camerad/selfdrive-camerad")]),
+  "clocksd": ("selfdrive/clocksd", [os.path.join(BASEDIR, "build/selfdrive/clocksd/selfdrive-clocksd")]),
+  "controlsd": "selfdrive.controls.controlsd",
+  "deleter": "selfdrive.loggerd.deleter",
+  "dmonitoringd": "selfdrive.monitoring.dmonitoringd",
   "dmonitoringmodeld": ("selfdrive/modeld", ["./dmonitoringmodeld"]),
-  "modeld": ("selfdrive/modeld", ["./modeld"]),
+  "gpsd": ("selfdrive/sensord", ["./gpsd"]),
+  "locationd": "selfdrive.locationd.locationd",
+  "logcatd": ("selfdrive/logcatd", ["./logcatd"]),
+  "loggerd": ("selfdrive/loggerd", [os.path.join(BASEDIR, "build/selfdrive/loggerd/selfdrive-loggerd")]),
+  "logmessaged": "selfdrive.logmessaged",
+  "modeld": ("selfdrive/modeld", [os.path.join(BASEDIR, "build/selfdrive/modeld/selfdrive-modeld-core")]),
+  # "pandad": "selfdrive.pandad",
+  "paramsd": "selfdrive.locationd.paramsd",
+  "plannerd": "selfdrive.controls.plannerd",
+  "proclogd": ("selfdrive/proclogd", [os.path.join(BASEDIR, "build/selfdrive/proclogd/selfdrive-proclogd")]),
+  "radard": "selfdrive.controls.radard",
   "rtshield": "selfdrive.rtshield",
+  "sensord": ("selfdrive/sensord", ["./sensord"]),
+  "thermald": "selfdrive.thermald.thermald",
+  "tombstoned": "selfdrive.tombstoned",
+  "ubloxd":  ("selfdrive/locationd", [os.path.join(BASEDIR, "build/selfdrive/locationd/selfdrive-locationd-ubloxd")]),
+  "ui":      ("selfdrive/ui", [os.path.join(BASEDIR, "build/selfdrive/ui/selfdrive-ui")]),
+  "updated":  "selfdrive.updated",
+  "uploader": "selfdrive.loggerd.uploader",
 }
 
 daemon_processes = {
@@ -437,10 +437,10 @@ def manager_init():
 def manager_thread():
 
   cloudlog.info("manager start")
-  cloudlog.info({"environ": os.environ})
+  # cloudlog.info({"environ": os.environ})
 
   # save boot log
-  subprocess.call(["./loggerd", "--bootlog"], cwd=os.path.join(BASEDIR, "selfdrive/loggerd"))
+  subprocess.call(["./selfdrive-loggerd", "--bootlog"], cwd=os.path.join(BASEDIR, "build/selfdrive/loggerd"))
 
   # start daemon processes
   for p in daemon_processes:
