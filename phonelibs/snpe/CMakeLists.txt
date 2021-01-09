@@ -13,4 +13,5 @@ target_link_libraries(snpe
 INTERFACE libsnpe
 INTERFACE libomp
 INTERFACE libsymphony-cpu
+INTERFACE atomic
 )
