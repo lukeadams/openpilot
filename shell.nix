@@ -33,7 +33,6 @@
         glew
         ninja # not used ... yet
         # libgles2-mesa-dev 
-        # cudnn_cudatoolkit_10_2
         libglvnd
         glfw3
         glib
@@ -49,7 +48,8 @@
         libtool 
         libusb
         zeromq
-        gcc-unwrapped
+        # gcc-unwrapped
+        gcc-unwrapped.lib # libatomic1.so
         # libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsmpeg-dev 
         # libsdl1.2-dev  libportmidi-dev libswscale-dev libavformat-dev libavcodec-dev libfreetype6-dev 
         # libsystemd-dev 
@@ -67,17 +67,20 @@
         # vim 
         # wget 
         # gcc-arm-none-eabi
-        gcc
+        # gcc
         intel-ocl # intel opencl library
         ocl-icd # opencl so fileexp
         opencl-headers
         openssl
-        autoPatchelfHook
+        # autoPatchelfHook
         llvmPackages.libcxxStdenv.cc.cc.lib
         lldb
         # ncurses
         # llvmPackages.libstdcxxClang
         # llvmPackages.libcxx llvmPackages.libcxxabi
+        # cudnn_cudatoolkit_10_2
+        guvcview
+        v4l-utils
     ]) ++ (with pkgs.python38Packages; [
         numpy
         jinja2
@@ -99,6 +102,10 @@
         libusb1
         tqdm
         crcmod
+        raven
+
+
+        # pygame
     ]);
 
     libs = pkgs.clangStdenv.lib.makeLibraryPath [ pkgs.gcc-unwrapped ];
