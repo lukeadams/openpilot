@@ -7,7 +7,7 @@ cdef extern from "params.cc":
 cdef extern from "util.c":
   pass
 
-cdef extern from "params.h":
+cdef extern from "selfdrive/common/params.h":
   cdef cppclass Params:
     Params(bool)
     Params(string)
