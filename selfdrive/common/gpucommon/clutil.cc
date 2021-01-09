@@ -77,6 +77,7 @@ cl_device_id cl_get_device_id(cl_device_type device_type) {
 }
 
 cl_program cl_program_from_file(cl_context ctx, cl_device_id device_id, const char* path, const char* args) {
+  printf("clutil.cc: atempt to load opencl source from %s\n", path);
   std::string src = util::read_file(path);
   assert(src.length() > 0);
   cl_program prg = CL_CHECK_ERR(clCreateProgramWithSource(ctx, 1, (const char*[]){src.c_str()}, NULL, &err));
