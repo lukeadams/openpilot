@@ -3,8 +3,9 @@ import numpy as np
 
 from cffi import FFI
 from common.ffi_wrapper import suffix
+from common.basedir import BASEDIR
 
-cluster_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)))
+cluster_dir = os.path.join(BASEDIR, "build/selfdrive/controls/lib/cluster")
 cluster_fn = os.path.join(cluster_dir, "libfastcluster"+suffix())
 
 ffi = FFI()
