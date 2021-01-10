@@ -22,6 +22,7 @@
 #else
 #include <GLES3/gl3.h>
 #endif
+#endif // ifdef QCOM
 
 #include "selfdrive/common/util.h"
 #include "selfdrive/common/gpucommon/visionimg.h"

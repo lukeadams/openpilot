@@ -35,8 +35,8 @@
 #include "cereal/messaging/messaging.hpp"
 #include "services.h"
 
-#include "visionipc.h"
-#include "visionipc_client.h"
+#include "cereal/visionipc/visionipc.h"
+#include "cereal/visionipc/visionipc_client.h"
 
 #if !(defined(QCOM) || defined(QCOM2))
 #define DISABLE_ENCODER // TODO: loggerd for PC

@@ -24,8 +24,8 @@
 #include "selfdrive/common/modeldata.h"
 #include "selfdrive/common/params.h"
 #include "sound.hpp"
-#include "visionipc.h"
-#include "visionipc_client.h"
+#include "cereal/visionipc/visionipc.h"
+#include "cereal/visionipc/visionipc_client.h"
 
 #define COLOR_BLACK nvgRGBA(0, 0, 0, 255)
 #define COLOR_BLACK_ALPHA(x) nvgRGBA(0, 0, 0, x)

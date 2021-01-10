@@ -10,14 +10,14 @@
 #include <thread>
 #include "selfdrive/common/mat.h"
 #include "selfdrive/common/swaglog.h"
-#include "selfdrive/common/gpucommon/visionbuf.h"
+#include "cereal/visionipc/visionbuf.h"
 #include "selfdrive/common/gpucommon/visionimg.h"
 #include "selfdrive/camerad/imgproc/utils.h"
 #include "cereal/messaging/messaging.hpp"
 #include "selfdrive/camerad/transforms/rgb_to_yuv.h"
 
-#include "selfdrive/common/visionipc/visionipc.h"
-#include "selfdrive/common/visionipc/visionipc_server.h"
+#include "cereal/visionipc/visionipc.h"
+#include "cereal/visionipc/visionipc_server.h"
 
 #define CAMERA_ID_IMX298 0
 #define CAMERA_ID_IMX179 1

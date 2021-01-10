@@ -22,7 +22,7 @@
 #include "selfdrive/common/swaglog.h"
 #include "selfdrive/common/util.h"
 #include "selfdrive/common/utilpp.h"
-#include "selfdrive/common/visionipc/visionipc_server.h"
+#include "cereal/visionipc/visionipc_server.h"
 
 ExitHandler do_exit;
 

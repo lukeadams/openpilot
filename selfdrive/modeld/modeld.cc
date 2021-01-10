@@ -3,18 +3,14 @@
 #include <unistd.h>
 #include <eigen3/Eigen/Dense>
 
-#include "selfdrive/common/gpucommon/visionbuf.h"
-#include "selfdrive/common/visionipc/visionipc_client.h"
+#include "cereal/visionipc/visionbuf.h"
+#include "cereal/visionipc/visionipc_client.h"
 #include "selfdrive/common/swaglog.h"
 #include "selfdrive/common/gpucommon/clutil.h"
+#include "selfdrive/common/utilpp.h"
 
 #include "selfdrive/modeld/models/driving.h"
 #include "cereal/messaging/messaging.hpp"
-volatile sig_atomic_t do_exit = 0;
-
-static void set_do_exit(int sig) {
-  do_exit = 1;
-}
 
 ExitHandler do_exit;
 // globals

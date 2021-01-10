@@ -4,7 +4,7 @@
 
 #include <zmq.h>
 
-#include "selfdrive/common/visionipc.h"
+#include "cereal/visionipc.h"
 #include "selfdrive/common/timing.h"
 #include "selfdrive/common/utilpp.h"
 

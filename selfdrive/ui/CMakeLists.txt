@@ -27,17 +27,17 @@ add_executable(selfdrive-ui
     paint.cc
     sidebar.cc
 )
-target_link_libraries(selfdrive-ui selfdrive-ui-qtwidgets cereal-messaging nanovg selfdrive-visionipc selfdrive-gpucommon) 
+target_link_libraries(selfdrive-ui selfdrive-ui-qtwidgets cereal-messaging nanovg visionipc selfdrive-gpucommon) 
 
 
 add_executable(selfdrive-ui-spinner
     qt/spinner.cc
 )
-target_link_libraries(selfdrive-ui-spinner selfdrive-ui-qtwidgets cereal-messaging nanovg selfdrive-visionipc selfdrive-gpucommon) 
+target_link_libraries(selfdrive-ui-spinner selfdrive-ui-qtwidgets cereal-messaging nanovg visionipc selfdrive-gpucommon) 
 add_executable(selfdrive-ui-text
     qt/text.cc
 )
-target_link_libraries(selfdrive-ui-text selfdrive-ui-qtwidgets cereal-messaging nanovg selfdrive-visionipc selfdrive-gpucommon) 
+target_link_libraries(selfdrive-ui-text selfdrive-ui-qtwidgets cereal-messaging nanovg visionipc selfdrive-gpucommon) 
 
 set_target_properties(selfdrive-ui selfdrive-ui-qtwidgets selfdrive-ui-spinner selfdrive-ui-text
     PROPERTIES AUTOMOC ON

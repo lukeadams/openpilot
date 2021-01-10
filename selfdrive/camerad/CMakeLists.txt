@@ -9,7 +9,7 @@ add_library(selfdrive-camerad-libs STATIC
 target_include_directories(selfdrive-camerad-libs PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_include_directories(selfdrive-camerad-libs PRIVATE ${OpenCV_INCLUDE_DIRS} ${OpenCL_INCLUDE_DIRS})
 target_link_libraries(selfdrive-camerad-libs ${OpenCV_LIBS} )
-target_link_libraries(selfdrive-camerad-libs  selfdrive-visionipc selfdrive-gpucommon cereal-messaging libzmq jpeg ${OpenCL_LIBRARY})
+target_link_libraries(selfdrive-camerad-libs  visionipc selfdrive-gpucommon cereal-messaging libzmq jpeg ${OpenCL_LIBRARY})
 
 add_executable(selfdrive-camerad 
     main.cc

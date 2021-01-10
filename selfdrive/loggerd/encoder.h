@@ -12,7 +12,7 @@ extern "C" {
 }
 
 #include "selfdrive/common/cqueue.h"
-#include "selfdrive/common/visionipc.h"
+#include "cereal/visionipc.h"
 
 // encoder: lossey codec using hardware hevc
 

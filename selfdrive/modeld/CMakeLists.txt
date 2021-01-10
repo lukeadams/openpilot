@@ -18,14 +18,14 @@ add_executable(selfdrive-modeld-dmonitoring
     "dmonitoringmodeld.cc"
     "models/dmonitoring.cc"
 )
-target_link_libraries(selfdrive-modeld-dmonitoring selfdrive-visionipc cereal-messaging selfdrive-modeld-common libyuv)
+target_link_libraries(selfdrive-modeld-dmonitoring visionipc cereal-messaging selfdrive-modeld-common libyuv)
 
 
 add_executable(selfdrive-modeld-core
     "modeld.cc"
     "models/driving.cc"
 )
-target_link_libraries(selfdrive-modeld-core selfdrive-visionipc cereal-messaging selfdrive-modeld-common)
+target_link_libraries(selfdrive-modeld-core visionipc cereal-messaging selfdrive-modeld-common)
 
 target_compile_definitions(selfdrive-modeld-core
     PUBLIC OPENPILOT_ROOT="${PROJECT_SOURCE_DIR}")

@@ -1,7 +1,7 @@
 #ifndef VISIONIMG_H
 #define VISIONIMG_H
 
-#include "selfdrive/common/gpucommon/visionbuf.h"
+#include "cereal/visionipc/visionbuf.h"
 #include "selfdrive/common/gpucommon/glutil.h"
 
 #ifdef QCOM

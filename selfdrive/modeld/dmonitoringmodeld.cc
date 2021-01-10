@@ -4,8 +4,8 @@
 #include <cassert>
 #include <sys/resource.h>
 
-#include "selfdrive/common/gpucommon/visionbuf.h"
-#include "selfdrive/common/visionipc/visionipc_client.h"
+#include "cereal/visionipc/visionbuf.h"
+#include "cereal/visionipc/visionipc_client.h"
 #include "selfdrive/common/swaglog.h"
 #include "selfdrive/common/utilpp.h"
 
